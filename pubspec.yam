@@ -1,0 +1,53 @@
+name: temp_monitor
+description: A Flutter app for monitoring and sending temperature data to Firebase.
+publish_to: "none" # چون پروژه شخصی است و در pub.dev منتشر نمی‌شود.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+# --------------------------
+# Dependencies (کتابخانه‌های اصلی پروژه)
+# --------------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Firebase Core: راه‌اندازی Firebase ---
+  firebase_core: ^3.15.2
+
+  # --- Cloud Firestore: برای خواندن/نوشتن داده‌ها ---
+  cloud_firestore: ^5.6.12
+
+  # --- intl: برای فرمت تاریخ و زمان ---
+  intl: ^0.18.1
+
+  # --- در صورت نیاز به انیمیشن یا طراحی ---
+  # cupertino_icons برای آیکون‌های iOS (اختیاری اما مفید)
+  cupertino_icons: ^1.0.8
+
+
+# --------------------------
+# Dev Dependencies (ابزارهای توسعه)
+# --------------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+# --------------------------
+# Flutter Config
+# --------------------------
+flutter:
+  uses-material-design: true
+
+  # اگر بعداً بخواهی تصاویر یا فونت اضافه کنی، اینجا اضافه می‌شود:
+  # assets:
+  #   - assets/images/
+  #
+  # fonts:
+  #   - family: Vazir
+  #     fonts:
+  #       - asset: assets/fonts/Vazir.ttf
