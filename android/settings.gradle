@@ -1,2 +1,0 @@
-rootProject.name = "temp_monitor"
-include(":app")
